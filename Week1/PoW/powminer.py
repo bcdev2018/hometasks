@@ -35,7 +35,7 @@ class PowMiner:
 
 def main():
 	miner = PowMiner("blake2b")
-    #difficulty = 2 ** 20
+    	#difficulty = 2 ** 20
 	for difficulty in range(0, 20):
 		randData = bytearray(os.urandom(1000))
 		proved = miner.doWork(randData, difficulty)
